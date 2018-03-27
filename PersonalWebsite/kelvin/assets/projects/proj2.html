@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>Birch Auarium Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <style>
+        div.caption{
+            font-size: medium;
+            color: white;
+            font-family: Baskerville;
+            word-wrap: break-word;
+            width: 1000px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            padding-left:10%;
+            padding-right:10%;
+        }
+        div.w3-display-container{
+            padding-left:20px;
+            padding-right:20px;
+
+        }
+
+        body{
+            background-color: #333333;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<h2 class="w3-center" style="margin-top:5%; font-family:Baskerville; color:white;" >Birch Aquarium Project </h2>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="projectpics/proj2_1.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj2_2.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj2_3.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj2_4.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj2_5.png" style="width:100%; border: 10px solid lightgrey">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<br>
+<div class="caption" align="center"><p> The most interesting aspect of this project was that we were the first team to do any implementation. I joined the Software team of the Birch Buddies in the second quarter that it existed. Its first quarter, it was in its ideation phase. The team before us made a lot of sketches, diagrams, and flow charts of what the project's goals were. It was very challenging starting something so big from scratch. Originally, we were going to build our own server using a Raspberry Pi and host the web application ourselves. After much research, I suggested to the team that we utilize an all-in-one tool such as Firebase to handle the database, hosting, and authentication. After a few days we had a skeleton of all three components: 1) Employee Portal, 2) Visitor Registration and 3) Exhibit Kiosks. It will be years before all the exhibits at the Birch Aquarium are completely digitized, but we set a strong foundation that many others have already had the opportunity to build on.</p></div>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+        document.location.href='#top';
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+

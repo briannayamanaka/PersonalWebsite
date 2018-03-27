@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>U.S. Presidents Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <style>
+        div.caption{
+            font-size: medium;
+            color: white;
+            font-family: Baskerville;
+            word-wrap: break-word;
+            width: 1000px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            padding-left:10%;
+            padding-right:10%;
+        }
+        div.w3-display-container{
+            padding-left:20px;
+            padding-right:20px;
+
+        }
+
+        body{
+            background-color: #333333;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<h2 class="w3-center" style="margin-top:5%; font-family:Baskerville; color:white;" >U.S. Presidents Project </h2>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="projectpics/proj1_4.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj1_5.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj1_1.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj1_2.png" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj1_3.png" style="width:100%; border: 10px solid lightgrey">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)";
+    >&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)";
+    >&#10095;</button>
+</div>
+
+<br>
+<div class="caption" align="center"><p> We decided to create an educational website because I personally take a lot of interest in educating children and providing them with new, fun and interesting ways to learn. The project was completed in iterations. The first 3 iterations contained basic components of the web application, using only HTML and CSS. Later iterations contained bootstrap for the layout and JavaScript for the "favoriting" functionality. Implementing the image gallery and timeline using only CSS and HTML was not an easy task because of how interactive the two components are. The most time consuming task I had was reading and learning about every U.S. president so that I could present valuable, easy-to-understand content for each of the 43 presidents.</p></div>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+        document.location.href='#top';
+        //window.scrollTo(0,0);
+        //window.location='#';
+
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+
+
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+

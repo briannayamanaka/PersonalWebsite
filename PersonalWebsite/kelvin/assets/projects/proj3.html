@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Fred Baker Elementary Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <style>
+        div.caption{
+            font-size: medium;
+            color: white;
+            font-family: Baskerville;
+            word-wrap: break-word;
+            width: 1000px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            padding-left:10%;
+            padding-right:10%;
+        }
+        div.w3-display-container{
+            padding-left:20px;
+            padding-right:20px;
+
+        }
+
+        body{
+            background-color: #333333;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<h2 class="w3-center" style="margin-top:5%; font-family:Baskerville; color:white;" >Fred Baker Elementary Project</h2>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="projectpics/proj3_1.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+    <img class="mySlides" src="projectpics/proj3_2.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+    <img class="mySlides" src="projectpics/proj3_3.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+    <img class="mySlides" src="projectpics/proj3_4.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(180deg)">
+    <img class="mySlides" src="projectpics/proj3_5.JPG" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj3_6.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+    <img class="mySlides" src="projectpics/proj3_7.JPG" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj3_8.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(180deg)">
+    <img class="mySlides" src="projectpics/proj3_9.JPG" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj3_10.JPG" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj3_11.JPG" style="width:100%; border: 10px solid lightgrey">
+    <img class="mySlides" src="projectpics/proj3_12.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+    <img class="mySlides" src="projectpics/proj3_13.JPG" style="width:100%; border: 10px solid lightgrey; transform: rotate(90deg); margin-top:15%; margin-bottom:90px">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<br>
+<div class="caption" align="center"><p> Before beginning any implementation, every team member had to design their own board game and create sketches of their designs. Once everyone had finished their sketches, we came together as a group and combined all of the good aspects of everyone's designs into one single, well-thought out board game. We made multiple shopping trips to ensure we had the right amounts and measurements of fabrics, paints, threads, and glues. Being the only member on the team with sewing capabilities and tools, I sewed together more than 300 feet of duck canvas to put the game tiles, border and backing together. To keep our budget on track, I created stencils from paper and traced over them onto the duck canvas. Tracing with pencil before painting made mistakes easy to correct. Having a 3d printer at home, I printed off files of problem solving puzzles for a challenging component of our game. I designed the game cards using an online editor similar to Photoshop. To make sure the cards could withstand dozens of 3rd graders' gameplay, I had them laminated in 5mm sheets. As the project leader, I had to make sure to plan ahead so that we could test the project with the 3rd graders, collect feedback, and make changes/additions to it before turning it in. The biggest obstacle we had was coordinating and making time to observe and interact with the students of Baker Elementary because their school is located in National City, which was a far drive for the team. Finding a time that worked for a group of 7 people was also challenging so we most often visited the school in smaller groups of 3 or 4. The project was a huge success. Mrs. Han continues using the boardgame with her students and shares it with other teachers. The students love playing it and wish they could play it in every grade. </p></div>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+        document.location.href='#top';
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+
